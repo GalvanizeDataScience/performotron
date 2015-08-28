@@ -5,6 +5,12 @@ This code is intende to duplicate the spirit of a Kaggle competition for the stu
 
 The idea is that it will score the code on some training data, and report the score to a specified slack channel as a bot.
 
+Installation
+=====
+If you have access to the repo, you should be able to do:
+
+`pip install git+https://github.com/zipfian/performotron.git`
+
 How to make it work
 ========
 
@@ -37,5 +43,6 @@ setup [https://gschool.slack.com/services/new](add channels here.)
 
 You'll then need to report URL and channel to and users of the Comparer (the
 students e.g.), so they can enter it when prompted.
+
 
 
