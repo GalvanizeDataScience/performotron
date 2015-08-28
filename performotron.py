@@ -53,11 +53,12 @@ class Comparer(object):
     def report_to_slack(self, predictions):
         """Report the score on slack.
         """
-        channel, username = self.get_config(['channel', 'username'])
+        channel, username, url = self.get_config(['channel', 'username', 'url'])
         
         data = {"channel":channel,
                 "username":username,
                 "text":"Got a model score of: %s" % self.score(predictions)
         }
-        return requests.post(*self.get_config(['slack_url']),
+
+        return requests.post(url,
                      data=json.dumps(data))
