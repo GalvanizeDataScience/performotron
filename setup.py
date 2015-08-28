@@ -6,7 +6,8 @@ setup(name='performotron',
       author='Isaac Laughlin',
       author_email='isaac.laughlin@galvanize.com',
       url='',
-      install_requires=['sklearn', 'yaml', 'requests']
+      install_requires=['sklearn', 'pyyaml', 'requests'],
+      tests_requires = ['nose']          
 )
       
       
