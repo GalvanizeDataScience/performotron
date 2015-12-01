@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(name='performotron',
-      version='0.0',
+      version='0.1',
       py_modules=['performotron'],
       author='Isaac Laughlin',
       author_email='isaac.laughlin@galvanize.com',
