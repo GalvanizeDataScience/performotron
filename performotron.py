@@ -4,6 +4,9 @@ from sklearn.metrics import mean_squared_error
 import os
 import yaml
 
+class SlackException(Exception):
+    pass
+
 class Comparer(object):
     """Class for comparing models on some held-out data.
 
@@ -60,5 +63,8 @@ class Comparer(object):
                 "text":"Got a model score of: %s" % self.score(predictions)
         }
 
-        return requests.post(url,
-                     data=json.dumps(data))
+        r = requests.post(url,
+                          data=json.dumps(data))
+        if r.status_code >= 300:
+            raise SlackException("Unsuccessful post to slack: '%s'" % r.text)
+        return r
