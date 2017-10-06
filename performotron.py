@@ -45,7 +45,7 @@ class Comparer(object):
             self.config = {}
         for k in keys:
             if k not in self.config:
-                self.config[k] = raw_input("What %s should I use report results?" %k)
+                self.config[k] = input("What %s should I use report results?" %k)
             yield self.config[k]
 
         with open(self.config_file, 'w') as outfile:

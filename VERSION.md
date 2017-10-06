@@ -1,0 +1,1 @@
+This content has been updated to work with Python3.  You can toggle into a python3 environment in conda like this `source activate py3` or you can revert to the python2 branch using `git checkout python2`.
