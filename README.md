@@ -38,8 +38,8 @@ Slack configuration.
 =====
 
 To allow posting to the correct channel, you must have an incoming-webhooks
-integration setup in slack. Each channel you'd like to post to needs its own
-setup add channels [here.](https://gschool.slack.com/services/new/incoming-webhook)
+integration setup in slack. Each team you'd like to post to needs its own
+setup add channels [here.](https://gstudents.slack.com/services/new/incoming-webhook)
 
 
 You'll then need to report URL and channel to and users of the Comparer (the
