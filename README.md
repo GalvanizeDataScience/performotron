@@ -9,7 +9,7 @@ Installation
 =====
 If you have access to the repo, you should be able to do:
 
-`pip install git+https://github.com/zipfian/performotron.git`
+`pip install git+https://github.com/gschool/dsi-performotron.git`
 
 How to make it work
 ========
