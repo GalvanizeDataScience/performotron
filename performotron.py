@@ -28,7 +28,7 @@ class Comparer(object):
     def load_config(self):
         if self.config_exists:
             with open(self.config_file, 'r') as infile:
-                return yaml.load(infile)
+                return yaml.load(infile, Loader=yaml.SafeLoader)
         return None
 
     @property
