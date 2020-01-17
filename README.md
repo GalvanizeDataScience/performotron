@@ -1,7 +1,7 @@
 Performotron
 ========
 
-This code is intende to duplicate the spirit of a Kaggle competition for the students.
+This code is intended to duplicate the spirit of a Kaggle competition for the students.
 
 The idea is that it will score the code on some training data, and report the score to a specified slack channel as a bot.
 
@@ -9,7 +9,7 @@ Installation
 =====
 If you have access to the repo, you should be able to do:
 
-`pip install git+https://github.com/gschool/dsi-performotron.git`
+`pip install git+https://github.com/GalvanizeDataScience/performotron.git`
 
 How to make it work
 ========
